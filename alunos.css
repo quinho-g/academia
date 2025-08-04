@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Alfa+Slab+One&family=Anton&family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Itim&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kaushan+Script&family=Lilita+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Patua+One&family=Permanent+Marker&family=Pirata+One&family=Press+Start+2P&family=Sixtyfour+Convergence&family=Suez+One&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Kaushan+Script&family=Lilita+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Patua+One&family=Permanent+Marker&family=Pirata+One&family=Suez+One&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+    scroll-behavior: smooth;
+}
+
+
+:root {
+    --cor1: rgb(2, 2, 248);
+    --cor2: rgb(0, 176, 251);
+    --cor3: rgb(0, 8, 79);
+    --fundo: rgb(238, 247, 255);
+    --fundoitem: rgb(220, 239, 250);
+    --letra: 'Inter', Arial, Helvetica, sans-serif;
+    --borda: -0.3rem;
+    --sombra: 0 0 0.3rem var(--cor2), 0 0 0.6rem var(--cor2);
+}
+
+html {
+    font-size: 1.2vw;
+}
+body {
+    color: rgb(0, 0, 0);
+    background-color: var(--fundo);
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    user-select: none;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 2.6rem;
+}
+
+h2 {
+    font-size: 2.4rem;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 1.4rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    transition: 0.3s;
+}div {
+    transition: 0.3s;
+}
+
+
+/* ---- Alunos ----- */
+#sec-alunos {
+    display: flex;
+    flex-direction: column;
+    h2 {
+        text-align: center;
+    }
+}.flex-alunos {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center; 
+    overflow-x: scroll; 
+    gap: 2rem;
+    height: auto;
+    padding: 0.5rem;
+    padding-top: 5rem;
+
+}.flex-alunos::-webkit-scrollbar {
+    display: none;
+}
+.item-alunos {
+    position: relative;
+    min-width: auto;
+    width: 30rem;
+    padding: 2rem;
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.8rem;
+    background-color: var(--fundoitem);
+    border-radius: 0.2rem solid var(--cor2);
+    flex: none;
+    box-shadow: var(--sombra);
+    border-radius: 2rem;
+    h3 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: var(--cor3);
+        position: absolute;
+        top: 0;
+        right: 50%;
+        transform: translate(50%, -50%);
+        padding: 1rem 2rem;
+        background-color: var(--fundoitem);
+        box-shadow: var(--sombra);
+        border-radius: 1rem;
+    }
+    p {
+        margin-top: 2rem;
+        text-align: center;
+    }
+}.antesdepois {
+    display: flex;
+    gap: 1rem;
+    position: relative;
+        img {
+            width: 10rem;
+            height: 15rem;
+            object-fit: cover;
+            border-radius: 1rem;
+            border: 0.2rem solid var(--cor2);
+            z-index: 1;
+        }img:hover {
+            transform: scale(1.4);
+        }
+        .seta {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 5rem;
+            height: 3rem;
+            background-color: var(--cor2);
+            clip-path: polygon(0% 0%, 0% 25%, 70% 25%, 70% 0%, 100% 50%, 70% 100%, 70% 75%, 0% 75%);
+        }
+        .img-aluno {
+            position: relative;
+        
+        h3 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: unset;
+            bottom: 0;
+            right: 50%;
+            transform: translate(50%, 50%);
+            padding: 0.5rem 1.5rem;
+            background-color: var(--fundoitem);
+            border-radius: 0.5rem;
+            box-shadow: var(--sombra);
+            z-index: 100;
+        }
+        }
+}
+
+/* -- Responsividade para dispositivos moveis -- */
+@media (min-width: 768px) and (max-width: 1024px) {
+    html {
+        font-size: 1.9vw;
+    }
+    /* ---- Alunos ----- */
+    .flex-alunos {
+        padding-top: 5rem;
+    }
+    .item-alunos {
+        width: 30rem;
+    }
+}
+
+
+
+@media (max-width: 767px) {
+    html {
+        font-size: 2.7vw;
+    }
+    /* ---- Alunos ----- */
+
+    .flex-alunos {
+        padding-top: 4rem;
+    }
+    .item-alunos {
+        width: 25rem;
+    }
+} 
+
+
+
+
+
