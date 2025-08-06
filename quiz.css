@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Alfa+Slab+One&family=Anton&family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Itim&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kaushan+Script&family=Lilita+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Patua+One&family=Permanent+Marker&family=Pirata+One&family=Press+Start+2P&family=Sixtyfour+Convergence&family=Suez+One&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Kaushan+Script&family=Lilita+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Patua+One&family=Permanent+Marker&family=Pirata+One&family=Suez+One&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+    scroll-behavior: smooth;
+}
+
+
+:root {
+    --cor1: rgb(2, 2, 248);
+    --cor2: rgb(0, 176, 251);
+    --cor3: rgb(0, 8, 79);
+    --fundo: rgb(238, 247, 255);
+    --fundoitem: rgb(220, 239, 250);
+    --letra: 'Inter', Arial, Helvetica, sans-serif;
+    --borda: -0.3rem;
+    --sombra: 0 0 0.3rem var(--cor2), 0 0 0.6rem var(--cor2);
+}
+
+html {
+    font-size: 1.2vw;
+}
+body {
+    overflow-x: hidden;
+    color: rgb(0, 0, 0);
+    background-color: var(--fundo);
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    user-select: none;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 2.6rem;
+}
+
+h2 {
+    font-size: 2.4rem;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 1.4rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    transition: 0.3s;
+}div {
+    transition: 0.3s;
+}
+
+#quiz {
+    display: grid;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    background-color: var(--fundoitem);
+    grid-template-columns: repeat(2,auto);
+    align-items: center;
+    gap: 2rem;
+    border-radius: 2rem;
+    border: 0.2rem solid var(--cor2);
+    h3 {
+        border-radius: 1rem;
+        color: var(--cor3);
+    }
+    img {
+        width: 70%;
+        background-color: var(--cor3);
+        border: 0.2rem solid var(--cor2);
+        border-radius: 50%;
+    }
+}.texto-quiz {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.botoes {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    div {
+        padding: 1rem;
+        border-radius: 1rem;
+        border: 0.2rem solid var(--cor2);
+        font-weight: bold;  
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+}
+#chamada {
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 0.2rem solid var(--cor2);  
+    font-weight: bold;
+    text-transform: uppercase;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+
+/* -- Responsividade para dispositivos moveis -- */
+@media (min-width: 768px) and (max-width: 1024px) {
+    html {
+        font-size: 1.9vw;
+    }
+#quiz {
+    margin-left: 4rem;
+    margin-right: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    grid-template-columns: auto;
+    img {
+        display: none;
+    }
+}.texto-quiz {
+    text-align: left;
+    p {
+        text-align: center;
+    }
+}
+
+
+}
+
+
+
+@media (max-width: 767px) {
+    html {
+        font-size: 2.7vw;
+    }
+#quiz {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    grid-template-columns: auto;
+    h3 {
+        border-radius: 1rem;
+        color: var(--cor3);
+    }
+    img {
+        order: 2;
+        margin: 0 auto;
+    }
+}.texto-quiz {
+    order: 1;
+    p {
+        text-align: center;
+    }
+}
+
+} 
+
+
+
+
+
