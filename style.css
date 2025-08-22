@@ -1129,7 +1129,7 @@ section {
 }
 #local img {
     position: absolute;
-    width: 40%;
+    width: 30%;
     height: 20%;
     top: 4rem;
     right: 1rem;
@@ -1179,6 +1179,7 @@ footer {
 }
 
 } 
+
 
 
 
